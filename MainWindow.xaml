@@ -8,7 +8,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    <StackPanel Orientation="Vertical">
+        <TextBlock x:Name="info" Text="Click a button" HorizontalAlignment="Left"/>
+        <Button Content="Clear Grid" Click="ClearGrid_Clicked"/>
+        <Button Content="Generate Grid" Click="Button_Clicked"/>
+        <TextBox x:Name="BatchSize" Text="15"/>
+        <Button Content="Batch Generate Grid" Click="BatchGenerate_Clicked"/>
+
+        <StackPanel x:Name="contentGrid" Orientation="Vertical"/>
     </StackPanel>
 </Window>
