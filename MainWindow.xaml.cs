@@ -30,7 +30,7 @@ namespace WinUiDemos
 
         private void myButton_Click(object sender, RoutedEventArgs e)
         {
-            MyButton.Content = "Clicked";
+            
         }
     }
 }
